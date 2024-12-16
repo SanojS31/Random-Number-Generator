@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+In this project, let's build a **Random Number Generator** by applying the concepts we have learned till now.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Refer to the image below:
 
-## Available Scripts
+<br/>
+<div style="text-align: center;">
+    <img src="https://assets.ccbp.in/frontend/content/react-js/random-number-generator-output-v2.gif" alt="random-no-generator" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
+</div>
+<br/>
 
-In the project directory, you can run:
+### Design Files
 
-### `npm start`
+<details>
+<summary>Click to view</summary>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Extra Small (Size < 576px) and Small (Size >= 576px)](https://assets.ccbp.in/frontend/content/react-js/random-number-generator-sm-output-v2.png)
+- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px)](https://assets.ccbp.in/frontend/content/react-js/random-number-generator-lg-output-v2.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+</details>
 
-### `npm test`
+### Set Up Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<details>
+<summary>Click to view</summary>
 
-### `npm run build`
+- Download dependencies by running `npm install`
+- Start up the app using `npm start`
+</details>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Completion Instructions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<details>
+<summary>Functionality to be added</summary>
+<br/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app must have the following functionalities
 
-### `npm run eject`
+- Initially, the number displayed should be **0**
+- When **Generate** button is clicked, a random number should be generated in the range of 0 to 100 and displayed
+</details>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<details>
+<summary>Implementation Files</summary>
+<br/>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Use these files to complete the implementation:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- `src/components/RandomNumberGenerator/index.js`
+- `src/components/RandomNumberGenerator/index.css`
+</details>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Quick Tips
 
-## Learn More
+<details>
+<summary>Click to view</summary>
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- You can use `Math.random()` function to get a random number (float value) in range 0 to less than 1 (`0 <= randomNumber < 1`)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  ```
+   Math.random()
+  ```
 
-### Code Splitting
+- You can use `Math.ceil()` function to round a **number up to the next largest integer**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  ```js
+  console.log(Math.ceil(95.906698007537561)); // 96
+  ```
 
-### Analyzing the Bundle Size
+- You can use the `box-shadow` CSS property to apply the box-shadow effect to containers
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  ```
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+  ```
 
-### Making a Progressive Web App
+  <br/>
+   <img src="https://assets.ccbp.in/frontend/content/react-js/box-shadow-img.png" alt="box shadow" style="width:200px" />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- You can use the `cursor` CSS property to specify the mouse cursor to be displayed when pointing over an element
 
-### Advanced Configuration
+  ```
+    cursor: pointer;
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+  <br/>
+   <img src="https://assets.ccbp.in/frontend/content/react-js/cursor-pointer-img.png" alt="cursor pointer" style="width:100px" />
 
-### Deployment
+- You can use the below `outline` CSS property for buttons and input elements to remove the highlighting when the elements are clicked
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  ```
+    outline: none;
+  ```
 
-### `npm run build` fails to minify
+</details>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Resources
+
+<details>
+<summary>Image URLs</summary>
+
+- [https://assets.ccbp.in/frontend/react-js/random-no-generator-bg.png](https://assets.ccbp.in/frontend/react-js/random-no-generator-bg.png)
+
+</details>
+
+<details>
+<summary>Colors</summary>
+
+<br/>
+
+<div style="background-color: #ffffff; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
+<div style="background-color: #e4ebf3; width: 150px; padding: 10px; color: black">Hex: #e4ebf3</div>
+<div style="background-color: #eaebed; width: 150px; padding: 10px; color: black">Hex: #eaebed</div>
+<div style="background-color: #0b69ff; width: 150px; padding: 10px; color: white">Hex: #0b69ff</div>
+<div style="background-color: #333333; width: 150px; padding: 10px; color: white">Hex: #333333</div>
+
+</details>
+
+<details>
+<summary>Font-families</summary>
+
+- Roboto
+
+</details>
+
+> ### _Things to Keep in Mind_
+>
+> - All components you implement should go in the `src/components` directory.
+> - Don't change the component folder names as those are the files being imported into the tests.
+> - **Do not remove the pre-filled code**
+> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
